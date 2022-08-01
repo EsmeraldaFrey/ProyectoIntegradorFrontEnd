@@ -5,10 +5,11 @@
          </div>
          <div class="redes">
                 <a href=""><img src="../../../assets/Header/linkedin.png" id="linkedin"></a>
-                <a href=""><img src="../../../assets/Header/facebook.png" id="facebook"></a>
-                <a href=""><img src="../../../assets/Header/instagram.png" id="instagram"></a>
-                <a href=""><img src="../../../assets/Header/github.png" id="github"></a>
-                <button type="button" class="btn btn-outline-light" (click)="login()">INGRESO</button>
+                <a href="https://www.facebook.com/esme.frey/"><img src="../../../assets/Header/facebook.png" id="facebook"></a>
+                <a href="https://www.instagram.com/esme.frey/"><img src="../../../assets/Header/instagram.png" id="instagram"></a>
+                <a href="https://github.com/EsmeraldaFrey"><img src="../../../assets/Header/github.png" id="github"></a>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
          </div>
      </div>
 </div>
